@@ -1,0 +1,293 @@
+/* style.css */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* ==== Header ==== */
+header {
+    background-color: #fff;
+    padding: 8px 30px;
+    display: block;
+    top: 0;
+    z-index: 1000;
+}
+
+/* ==== Logo and Website Name ==== */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-container img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover; 
+    border-radius: 8px; 
+}
+
+.logo-container a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    transition: color 0.2s ease;
+}
+
+.logo-container a:hover {
+    color: #ff671c;
+}
+
+/* ==== Search Box ==== */
+.search-container {
+    flex: 1;
+    display: flex;
+    margin: 0 30px;
+    position: relative; 
+}
+
+.search-container i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #999;
+    pointer-events: none; 
+}
+
+.search-container input {
+    width: 100%;
+    max-width: 420px;
+    height: 40px;
+    padding: 0 10px 0 40px;
+    border-radius: 20px;
+    border: 2px solid #e8e8e8;
+    transition: border-color 0.2s ease-in-out;
+    font-size: 14px;
+}
+
+
+.search-container input:focus {
+    border-color: #ff671c;
+    outline: none;
+}
+
+/* ==== Navigation Buttons ==== */
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+/* Đăng nhập */
+.logIn {
+    padding: 8px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    color: #333;
+}
+
+.logIn:hover {
+    background-color: #e2e6ea;
+}
+
+/* Đăng ký */
+.register {
+    padding: 8px 26px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    background-color: #ff671c;
+    color: #fff;
+}
+
+.register:hover {
+    background-color: #d85c00;
+}
+/* ==== Main ==== */
+
+/* Sidebar bên trái, cố định */
+.sidebar {
+    position: fixed;
+    top: 60px; /* nếu có header cao 60px */
+    left: 0;
+    width: 200px;
+    background-color: #f4f4f4;
+    padding-top: 20px;
+    overflow-y: auto;
+    z-index: 999;
+}
+
+/* Các liên kết trong sidebar */
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background-color: #e2e6ea;
+    border-radius: 30px ;
+}
+
+/* Phần nội dung nằm bên phải sidebar */
+.content {
+    margin-left: 200px; /* đẩy nội dung tránh sidebar */
+    padding: 20px;
+    width: calc(100% - 200px); /* quan trọng: tránh bị tràn chiều ngang */
+
+}
+
+.card{
+    border-radius: 20px;
+}
+
+.video {
+    height: 270px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 0px 15px 25px 15px;
+    margin-bottom: 20px;
+    
+}
+.video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px; /* Bo góc */
+    border: 3px solid #4CAF50; /* Viền màu xanh */
+    pointer-events: none;
+}
+
+.video video,
+.video iframe {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Giữ tỷ lệ, không méo */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==== Footer ==== */
+
+
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px;
+    font-size: 14px;
+    z-index: 10000;
+}
+
+.footer-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-logo img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-column h4 {
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #ff671c;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #ff671c;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ff671c;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff671c;
+}
+
+
+
