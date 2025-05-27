@@ -1,0 +1,11 @@
+{
+    "name": "admin/nguyen-thanh-trung",
+    "autoload": {
+        "psr-4": {
+            "Admin\\NguyenThanhTrung\\": "src/"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.9"
+    }
+}

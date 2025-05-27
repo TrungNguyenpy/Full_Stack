@@ -1,0 +1,25 @@
+.content-wrapper {
+    margin-left: 220px;
+    padding: 30px;
+    min-height: 100vh;
+}
+
+.header-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    border-bottom: 1px solid #ccc;
+    z-index: 1000;
+}
+.form-container {
+    margin: auto;
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+.form-label{
+    padding-right: 25px;
+}
